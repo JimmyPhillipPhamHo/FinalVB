@@ -77,6 +77,12 @@
       <DependentUpon>ART of WAR.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Campaign\CampaignMenu.Designer.vb">
+      <DependentUpon>CampaignMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Campaign\CampaignMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -97,6 +103,9 @@
     <EmbeddedResource Include="ART of WAR.resx">
       <DependentUpon>ART of WAR.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Campaign\CampaignMenu.resx">
+      <DependentUpon>CampaignMenu.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -115,6 +124,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Campaign\Levels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
