@@ -119,7 +119,7 @@ Partial Class ArtofWarMenu
         Me.picLogo.BackColor = System.Drawing.Color.Transparent
         Me.picLogo.BackgroundImage = CType(resources.GetObject("picLogo.BackgroundImage"), System.Drawing.Image)
         Me.picLogo.Image = CType(resources.GetObject("picLogo.Image"), System.Drawing.Image)
-        Me.picLogo.Location = New System.Drawing.Point(121, 76)
+        Me.picLogo.Location = New System.Drawing.Point(121, 78)
         Me.picLogo.Name = "picLogo"
         Me.picLogo.Size = New System.Drawing.Size(369, 274)
         Me.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
