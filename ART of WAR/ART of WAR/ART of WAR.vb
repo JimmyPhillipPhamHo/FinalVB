@@ -2,7 +2,7 @@
     Dim second As Integer
 
     Private Sub ArtofWarMenu_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Timer1.Interval = 1000
+        Timer1.Interval = 5000
         Timer1.Start() 'Timer starts functioning
     End Sub
 

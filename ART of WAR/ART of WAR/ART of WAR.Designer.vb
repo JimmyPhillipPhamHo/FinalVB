@@ -108,9 +108,9 @@ Partial Class ArtofWarMenu
         'picMBackGround
         '
         Me.picMBackGround.BackColor = System.Drawing.Color.Black
-        Me.picMBackGround.Location = New System.Drawing.Point(1, -1)
+        Me.picMBackGround.Location = New System.Drawing.Point(-4, -1)
         Me.picMBackGround.Name = "picMBackGround"
-        Me.picMBackGround.Size = New System.Drawing.Size(597, 468)
+        Me.picMBackGround.Size = New System.Drawing.Size(601, 468)
         Me.picMBackGround.TabIndex = 7
         Me.picMBackGround.TabStop = False
         '
@@ -119,7 +119,7 @@ Partial Class ArtofWarMenu
         Me.picLogo.BackColor = System.Drawing.Color.Transparent
         Me.picLogo.BackgroundImage = CType(resources.GetObject("picLogo.BackgroundImage"), System.Drawing.Image)
         Me.picLogo.Image = CType(resources.GetObject("picLogo.Image"), System.Drawing.Image)
-        Me.picLogo.Location = New System.Drawing.Point(142, 90)
+        Me.picLogo.Location = New System.Drawing.Point(121, 76)
         Me.picLogo.Name = "picLogo"
         Me.picLogo.Size = New System.Drawing.Size(369, 274)
         Me.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -131,7 +131,7 @@ Partial Class ArtofWarMenu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(595, 466)
+        Me.ClientSize = New System.Drawing.Size(594, 431)
         Me.Controls.Add(Me.picLogo)
         Me.Controls.Add(Me.picMBackGround)
         Me.Controls.Add(Me.btnSolder)
