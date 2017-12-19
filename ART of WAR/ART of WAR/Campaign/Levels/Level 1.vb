@@ -50,4 +50,8 @@
     Private Sub tmrGravity_Tick(sender As Object, e As EventArgs) Handles tmrGravity.Tick
         picTest.Top += moveSpeed
     End Sub
+
+    Private Sub Level_1_Load(sender As Object, e As EventArgs) Handles Me.Load
+        tmrGameLogic.Start()
+    End Sub
 End Class
