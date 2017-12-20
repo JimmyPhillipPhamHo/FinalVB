@@ -23,28 +23,18 @@ Partial Class Level_1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.picTest = New System.Windows.Forms.PictureBox()
         Me.tmrRight = New System.Windows.Forms.Timer(Me.components)
         Me.tmrLeft = New System.Windows.Forms.Timer(Me.components)
         Me.tmrUp = New System.Windows.Forms.Timer(Me.components)
         Me.tmrGameLogic = New System.Windows.Forms.Timer(Me.components)
         Me.tmrGravity = New System.Windows.Forms.Timer(Me.components)
-        Me.picGround = New System.Windows.Forms.PictureBox()
+        Me.picTest = New System.Windows.Forms.PictureBox()
         Me.picAir = New System.Windows.Forms.PictureBox()
+        Me.picGround = New System.Windows.Forms.PictureBox()
         CType(Me.picTest, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picGround, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picAir, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picGround, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'picTest
-        '
-        Me.picTest.Image = Global.ART_of_WAR.My.Resources.Resources.piq_57250_400x400
-        Me.picTest.Location = New System.Drawing.Point(-4, 324)
-        Me.picTest.Name = "picTest"
-        Me.picTest.Size = New System.Drawing.Size(110, 90)
-        Me.picTest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picTest.TabIndex = 0
-        Me.picTest.TabStop = False
         '
         'tmrRight
         '
@@ -66,6 +56,26 @@ Partial Class Level_1
         '
         Me.tmrGravity.Interval = 20
         '
+        'picTest
+        '
+        Me.picTest.Image = Global.ART_of_WAR.My.Resources.Resources.piq_57250_400x400
+        Me.picTest.Location = New System.Drawing.Point(-4, 324)
+        Me.picTest.Name = "picTest"
+        Me.picTest.Size = New System.Drawing.Size(110, 90)
+        Me.picTest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picTest.TabIndex = 0
+        Me.picTest.TabStop = False
+        '
+        'picAir
+        '
+        Me.picAir.Image = Global.ART_of_WAR.My.Resources.Resources.Level1TestBackGround
+        Me.picAir.Location = New System.Drawing.Point(-4, 1)
+        Me.picAir.Name = "picAir"
+        Me.picAir.Size = New System.Drawing.Size(856, 317)
+        Me.picAir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picAir.TabIndex = 2
+        Me.picAir.TabStop = False
+        '
         'picGround
         '
         Me.picGround.Location = New System.Drawing.Point(-4, 420)
@@ -73,14 +83,6 @@ Partial Class Level_1
         Me.picGround.Size = New System.Drawing.Size(856, 13)
         Me.picGround.TabIndex = 1
         Me.picGround.TabStop = False
-        '
-        'picAir
-        '
-        Me.picAir.Location = New System.Drawing.Point(-4, 1)
-        Me.picAir.Name = "picAir"
-        Me.picAir.Size = New System.Drawing.Size(856, 317)
-        Me.picAir.TabIndex = 2
-        Me.picAir.TabStop = False
         '
         'Level_1
         '
@@ -93,8 +95,8 @@ Partial Class Level_1
         Me.Name = "Level_1"
         Me.Text = "Level_1"
         CType(Me.picTest, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picGround, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picAir, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picGround, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

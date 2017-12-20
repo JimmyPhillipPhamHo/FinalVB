@@ -25,13 +25,13 @@ Partial Class ArtofWarMenu
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ArtofWarMenu))
         Me.btnCampaign = New System.Windows.Forms.Button()
-        Me.btnSM = New System.Windows.Forms.Button()
-        Me.btnMultiplayer = New System.Windows.Forms.Button()
+        Me.btnSurvivleMode = New System.Windows.Forms.Button()
+        Me.btnMulitplayer = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.btnSettings = New System.Windows.Forms.Button()
-        Me.btnSolder = New System.Windows.Forms.Button()
+        Me.btnSoldier = New System.Windows.Forms.Button()
         Me.picMBackGround = New System.Windows.Forms.PictureBox()
         Me.picLogo = New System.Windows.Forms.PictureBox()
         CType(Me.picMBackGround, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -44,26 +44,26 @@ Partial Class ArtofWarMenu
         Me.btnCampaign.Name = "btnCampaign"
         Me.btnCampaign.Size = New System.Drawing.Size(190, 24)
         Me.btnCampaign.TabIndex = 0
-        Me.btnCampaign.Text = "CAMPAIGN"
+        Me.btnCampaign.Text = "Campaign"
         Me.btnCampaign.UseVisualStyleBackColor = True
         '
-        'btnSM
+        'btnSurvivleMode
         '
-        Me.btnSM.Location = New System.Drawing.Point(191, 214)
-        Me.btnSM.Name = "btnSM"
-        Me.btnSM.Size = New System.Drawing.Size(190, 28)
-        Me.btnSM.TabIndex = 1
-        Me.btnSM.Text = "Survival Mode"
-        Me.btnSM.UseVisualStyleBackColor = True
+        Me.btnSurvivleMode.Location = New System.Drawing.Point(191, 214)
+        Me.btnSurvivleMode.Name = "btnSurvivleMode"
+        Me.btnSurvivleMode.Size = New System.Drawing.Size(190, 28)
+        Me.btnSurvivleMode.TabIndex = 1
+        Me.btnSurvivleMode.Text = "Coming Soon"
+        Me.btnSurvivleMode.UseVisualStyleBackColor = True
         '
-        'btnMultiplayer
+        'btnMulitplayer
         '
-        Me.btnMultiplayer.Location = New System.Drawing.Point(191, 160)
-        Me.btnMultiplayer.Name = "btnMultiplayer"
-        Me.btnMultiplayer.Size = New System.Drawing.Size(190, 28)
-        Me.btnMultiplayer.TabIndex = 2
-        Me.btnMultiplayer.Text = "Multiplayer"
-        Me.btnMultiplayer.UseVisualStyleBackColor = True
+        Me.btnMulitplayer.Location = New System.Drawing.Point(191, 160)
+        Me.btnMulitplayer.Name = "btnMulitplayer"
+        Me.btnMulitplayer.Size = New System.Drawing.Size(190, 28)
+        Me.btnMulitplayer.TabIndex = 2
+        Me.btnMulitplayer.Text = "Coming Soon"
+        Me.btnMulitplayer.UseVisualStyleBackColor = True
         '
         'btnQuit
         '
@@ -96,21 +96,21 @@ Partial Class ArtofWarMenu
         Me.btnSettings.Text = "Settings"
         Me.btnSettings.UseVisualStyleBackColor = True
         '
-        'btnSolder
+        'btnSoldier
         '
-        Me.btnSolder.Location = New System.Drawing.Point(191, 258)
-        Me.btnSolder.Name = "btnSolder"
-        Me.btnSolder.Size = New System.Drawing.Size(190, 28)
-        Me.btnSolder.TabIndex = 6
-        Me.btnSolder.Text = "Solder"
-        Me.btnSolder.UseVisualStyleBackColor = True
+        Me.btnSoldier.Location = New System.Drawing.Point(191, 258)
+        Me.btnSoldier.Name = "btnSoldier"
+        Me.btnSoldier.Size = New System.Drawing.Size(190, 28)
+        Me.btnSoldier.TabIndex = 6
+        Me.btnSoldier.Text = "Coming Soon"
+        Me.btnSoldier.UseVisualStyleBackColor = True
         '
         'picMBackGround
         '
         Me.picMBackGround.BackColor = System.Drawing.Color.Black
-        Me.picMBackGround.Location = New System.Drawing.Point(-4, -1)
+        Me.picMBackGround.Location = New System.Drawing.Point(0, 0)
         Me.picMBackGround.Name = "picMBackGround"
-        Me.picMBackGround.Size = New System.Drawing.Size(601, 468)
+        Me.picMBackGround.Size = New System.Drawing.Size(596, 432)
         Me.picMBackGround.TabIndex = 7
         Me.picMBackGround.TabStop = False
         '
@@ -119,7 +119,7 @@ Partial Class ArtofWarMenu
         Me.picLogo.BackColor = System.Drawing.Color.Transparent
         Me.picLogo.BackgroundImage = CType(resources.GetObject("picLogo.BackgroundImage"), System.Drawing.Image)
         Me.picLogo.Image = CType(resources.GetObject("picLogo.Image"), System.Drawing.Image)
-        Me.picLogo.Location = New System.Drawing.Point(121, 78)
+        Me.picLogo.Location = New System.Drawing.Point(103, 76)
         Me.picLogo.Name = "picLogo"
         Me.picLogo.Size = New System.Drawing.Size(369, 274)
         Me.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -134,12 +134,12 @@ Partial Class ArtofWarMenu
         Me.ClientSize = New System.Drawing.Size(594, 431)
         Me.Controls.Add(Me.picLogo)
         Me.Controls.Add(Me.picMBackGround)
-        Me.Controls.Add(Me.btnSolder)
+        Me.Controls.Add(Me.btnSoldier)
         Me.Controls.Add(Me.btnSettings)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.btnQuit)
-        Me.Controls.Add(Me.btnMultiplayer)
-        Me.Controls.Add(Me.btnSM)
+        Me.Controls.Add(Me.btnMulitplayer)
+        Me.Controls.Add(Me.btnSurvivleMode)
         Me.Controls.Add(Me.btnCampaign)
         Me.Name = "ArtofWarMenu"
         Me.Text = " "
@@ -150,13 +150,13 @@ Partial Class ArtofWarMenu
 
     End Sub
     Friend WithEvents btnCampaign As System.Windows.Forms.Button
-    Friend WithEvents btnSM As System.Windows.Forms.Button
-    Friend WithEvents btnMultiplayer As System.Windows.Forms.Button
+    Friend WithEvents btnSurvivleMode As System.Windows.Forms.Button
+    Friend WithEvents btnMulitplayer As System.Windows.Forms.Button
     Friend WithEvents btnQuit As System.Windows.Forms.Button
     Friend WithEvents lblTitle As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents btnSettings As System.Windows.Forms.Button
-    Friend WithEvents btnSolder As System.Windows.Forms.Button
+    Friend WithEvents btnSoldier As System.Windows.Forms.Button
     Friend WithEvents picMBackGround As System.Windows.Forms.PictureBox
     Friend WithEvents picLogo As System.Windows.Forms.PictureBox
 
