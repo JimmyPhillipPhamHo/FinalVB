@@ -140,6 +140,57 @@
   <ItemGroup>
     <None Include="Resources\Level1TestBackGround.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\halo 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\halo sprites Stationary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\halo sprites Stationary 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CM1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CM11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CM12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CM2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CM3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CM4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CM5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CM6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CM7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CM8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CM9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CM10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\halo sprites Stationary 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

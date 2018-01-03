@@ -77,10 +77,10 @@ Partial Class ArtofWarMenu
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("High Tower Text", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.Location = New System.Drawing.Point(166, 32)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(250, 55)
+        Me.lblTitle.Size = New System.Drawing.Size(232, 54)
         Me.lblTitle.TabIndex = 4
         Me.lblTitle.Text = "Art of War"
         '
@@ -108,7 +108,7 @@ Partial Class ArtofWarMenu
         'picMBackGround
         '
         Me.picMBackGround.BackColor = System.Drawing.Color.Black
-        Me.picMBackGround.Location = New System.Drawing.Point(0, 0)
+        Me.picMBackGround.Location = New System.Drawing.Point(465, 62)
         Me.picMBackGround.Name = "picMBackGround"
         Me.picMBackGround.Size = New System.Drawing.Size(596, 432)
         Me.picMBackGround.TabIndex = 7
@@ -119,7 +119,7 @@ Partial Class ArtofWarMenu
         Me.picLogo.BackColor = System.Drawing.Color.Transparent
         Me.picLogo.BackgroundImage = CType(resources.GetObject("picLogo.BackgroundImage"), System.Drawing.Image)
         Me.picLogo.Image = CType(resources.GetObject("picLogo.Image"), System.Drawing.Image)
-        Me.picLogo.Location = New System.Drawing.Point(103, 76)
+        Me.picLogo.Location = New System.Drawing.Point(568, 138)
         Me.picLogo.Name = "picLogo"
         Me.picLogo.Size = New System.Drawing.Size(369, 274)
         Me.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -131,7 +131,7 @@ Partial Class ArtofWarMenu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(594, 431)
+        Me.ClientSize = New System.Drawing.Size(761, 538)
         Me.Controls.Add(Me.picLogo)
         Me.Controls.Add(Me.picMBackGround)
         Me.Controls.Add(Me.btnSoldier)

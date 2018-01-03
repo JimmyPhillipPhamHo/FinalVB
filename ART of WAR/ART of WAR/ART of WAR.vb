@@ -17,7 +17,11 @@
     End Sub
 
     Private Sub btnCampaign_Click(sender As Object, e As EventArgs) Handles btnCampaign.Click
-        Me.Visible = False
+        Me.Hide()
         CampaignMenu.Show()
+    End Sub
+
+    Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
+        Application.Exit()
     End Sub
 End Class
