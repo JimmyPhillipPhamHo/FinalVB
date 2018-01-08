@@ -157,4 +157,73 @@
   <data name="Player" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Player.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CityNightbackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CMJ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CMJ1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CMJ2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CMJ2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CMRV1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CMRV1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CMRV10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CMRV10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CMRV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CMRV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CMRV3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CMRV3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CMRV4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CMRV4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CMRV5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CMRV5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CMRV6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CMRV6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CMRV7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CMRV7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CMRV8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CMRV8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CMRV9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CMRV9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flagcaptured" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flag_captured.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="flag_captured" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flag_captured.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="flag_captured1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flag_captured.wma;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Pelican" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pelican.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="platforms" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\platforms.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlayerRV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PlayerRV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedFlag1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red Flag 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedFlag2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red Flag 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedFlag3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red Flag 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_04_MKAlieZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\04_MKAlieZ.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

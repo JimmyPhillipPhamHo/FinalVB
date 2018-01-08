@@ -29,8 +29,15 @@ Partial Class Level_1
         Me.tmrUp = New System.Windows.Forms.Timer(Me.components)
         Me.tmrGame = New System.Windows.Forms.Timer(Me.components)
         Me.tmrGravity = New System.Windows.Forms.Timer(Me.components)
+        Me.tmrCMA = New System.Windows.Forms.Timer(Me.components)
+        Me.tmrFlags = New System.Windows.Forms.Timer(Me.components)
+        Me.Goal = New System.Windows.Forms.PictureBox()
+        Me.Flag2 = New System.Windows.Forms.PictureBox()
+        Me.Flag3 = New System.Windows.Forms.PictureBox()
+        Me.Flag1 = New System.Windows.Forms.PictureBox()
+        Me.Flag0 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
@@ -43,20 +50,15 @@ Partial Class Level_1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.picGround = New System.Windows.Forms.PictureBox()
         Me.picPlayer = New System.Windows.Forms.PictureBox()
-        Me.picCm1 = New System.Windows.Forms.PictureBox()
-        Me.picCm2 = New System.Windows.Forms.PictureBox()
-        Me.picCm3 = New System.Windows.Forms.PictureBox()
-        Me.picCm4 = New System.Windows.Forms.PictureBox()
-        Me.picCm5 = New System.Windows.Forms.PictureBox()
-        Me.picCm6 = New System.Windows.Forms.PictureBox()
-        Me.picCm7 = New System.Windows.Forms.PictureBox()
-        Me.picCm8 = New System.Windows.Forms.PictureBox()
-        Me.picCm9 = New System.Windows.Forms.PictureBox()
-        Me.picCm10 = New System.Windows.Forms.PictureBox()
         Me.picAir = New System.Windows.Forms.PictureBox()
-        Me.tmrCMA = New System.Windows.Forms.Timer(Me.components)
+        Me.AxWindowsMediaPlayer1 = New AxWMPLib.AxWindowsMediaPlayer()
+        CType(Me.Goal, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Flag2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Flag3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Flag1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Flag0, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,17 +71,8 @@ Partial Class Level_1
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picGround, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPlayer, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picCm1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picCm2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picCm3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picCm4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picCm5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picCm6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picCm7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picCm8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picCm9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picCm10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picAir, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tmrRight
@@ -102,30 +95,84 @@ Partial Class Level_1
         '
         Me.tmrGravity.Interval = 20
         '
+        'tmrCMA
+        '
+        '
+        'Goal
+        '
+        Me.Goal.BackColor = System.Drawing.Color.Transparent
+        Me.Goal.Image = Global.ART_of_WAR.My.Resources.Resources.Pelican
+        Me.Goal.Location = New System.Drawing.Point(616, 392)
+        Me.Goal.Name = "Goal"
+        Me.Goal.Size = New System.Drawing.Size(556, 210)
+        Me.Goal.TabIndex = 24
+        Me.Goal.TabStop = False
+        '
+        'Flag2
+        '
+        Me.Flag2.BackColor = System.Drawing.Color.Transparent
+        Me.Flag2.Image = Global.ART_of_WAR.My.Resources.Resources.RedFlag1
+        Me.Flag2.Location = New System.Drawing.Point(340, 524)
+        Me.Flag2.Name = "Flag2"
+        Me.Flag2.Size = New System.Drawing.Size(42, 85)
+        Me.Flag2.TabIndex = 23
+        Me.Flag2.TabStop = False
+        '
+        'Flag3
+        '
+        Me.Flag3.BackColor = System.Drawing.Color.Transparent
+        Me.Flag3.Image = Global.ART_of_WAR.My.Resources.Resources.RedFlag1
+        Me.Flag3.Location = New System.Drawing.Point(776, 165)
+        Me.Flag3.Name = "Flag3"
+        Me.Flag3.Size = New System.Drawing.Size(42, 85)
+        Me.Flag3.TabIndex = 22
+        Me.Flag3.TabStop = False
+        '
+        'Flag1
+        '
+        Me.Flag1.BackColor = System.Drawing.Color.Transparent
+        Me.Flag1.Image = Global.ART_of_WAR.My.Resources.Resources.RedFlag1
+        Me.Flag1.Location = New System.Drawing.Point(496, 310)
+        Me.Flag1.Name = "Flag1"
+        Me.Flag1.Size = New System.Drawing.Size(42, 85)
+        Me.Flag1.TabIndex = 21
+        Me.Flag1.TabStop = False
+        '
+        'Flag0
+        '
+        Me.Flag0.BackColor = System.Drawing.Color.Transparent
+        Me.Flag0.Image = Global.ART_of_WAR.My.Resources.Resources.RedFlag1
+        Me.Flag0.Location = New System.Drawing.Point(129, 165)
+        Me.Flag0.Name = "Flag0"
+        Me.Flag0.Size = New System.Drawing.Size(42, 85)
+        Me.Flag0.TabIndex = 20
+        Me.Flag0.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.Color.White
+        Me.PictureBox7.BackgroundImage = Global.ART_of_WAR.My.Resources.Resources.platforms
+        Me.PictureBox7.Location = New System.Drawing.Point(449, 401)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(131, 32)
+        Me.PictureBox7.TabIndex = 19
+        Me.PictureBox7.TabStop = False
+        Me.PictureBox7.Tag = "platform"
+        '
         'PictureBox12
         '
         Me.PictureBox12.BackColor = System.Drawing.Color.Green
-        Me.PictureBox12.Location = New System.Drawing.Point(1146, 243)
+        Me.PictureBox12.Location = New System.Drawing.Point(1025, 256)
         Me.PictureBox12.Name = "PictureBox12"
         Me.PictureBox12.Size = New System.Drawing.Size(157, 18)
         Me.PictureBox12.TabIndex = 18
         Me.PictureBox12.TabStop = False
         Me.PictureBox12.Tag = "platform"
         '
-        'PictureBox11
-        '
-        Me.PictureBox11.BackColor = System.Drawing.Color.Green
-        Me.PictureBox11.Location = New System.Drawing.Point(226, 366)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(157, 18)
-        Me.PictureBox11.TabIndex = 17
-        Me.PictureBox11.TabStop = False
-        Me.PictureBox11.Tag = "platform"
-        '
         'PictureBox10
         '
         Me.PictureBox10.BackColor = System.Drawing.Color.Green
-        Me.PictureBox10.Location = New System.Drawing.Point(152, 90)
+        Me.PictureBox10.Location = New System.Drawing.Point(251, 101)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(157, 18)
         Me.PictureBox10.TabIndex = 16
@@ -135,7 +182,7 @@ Partial Class Level_1
         'PictureBox9
         '
         Me.PictureBox9.BackColor = System.Drawing.Color.Green
-        Me.PictureBox9.Location = New System.Drawing.Point(947, 101)
+        Me.PictureBox9.Location = New System.Drawing.Point(871, 101)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(157, 18)
         Me.PictureBox9.TabIndex = 15
@@ -145,7 +192,7 @@ Partial Class Level_1
         'PictureBox8
         '
         Me.PictureBox8.BackColor = System.Drawing.Color.Green
-        Me.PictureBox8.Location = New System.Drawing.Point(947, 392)
+        Me.PictureBox8.Location = New System.Drawing.Point(861, 354)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(157, 18)
         Me.PictureBox8.TabIndex = 14
@@ -155,7 +202,7 @@ Partial Class Level_1
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.Green
-        Me.PictureBox6.Location = New System.Drawing.Point(586, 69)
+        Me.PictureBox6.Location = New System.Drawing.Point(565, 68)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(157, 18)
         Me.PictureBox6.TabIndex = 12
@@ -164,10 +211,11 @@ Partial Class Level_1
         '
         'PictureBox4
         '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Green
-        Me.PictureBox4.Location = New System.Drawing.Point(469, 435)
+        Me.PictureBox4.BackColor = System.Drawing.Color.White
+        Me.PictureBox4.BackgroundImage = Global.ART_of_WAR.My.Resources.Resources.platforms
+        Me.PictureBox4.Location = New System.Drawing.Point(251, 392)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(157, 18)
+        Me.PictureBox4.Size = New System.Drawing.Size(131, 32)
         Me.PictureBox4.TabIndex = 11
         Me.PictureBox4.TabStop = False
         Me.PictureBox4.Tag = "platform"
@@ -175,7 +223,7 @@ Partial Class Level_1
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.Green
-        Me.PictureBox3.Location = New System.Drawing.Point(372, 181)
+        Me.PictureBox3.Location = New System.Drawing.Point(423, 256)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(157, 18)
         Me.PictureBox3.TabIndex = 10
@@ -194,7 +242,8 @@ Partial Class Level_1
         '
         'PictureBox
         '
-        Me.PictureBox.Location = New System.Drawing.Point(1410, 1)
+        Me.PictureBox.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox.Location = New System.Drawing.Point(1248, 1)
         Me.PictureBox.Name = "PictureBox"
         Me.PictureBox.Size = New System.Drawing.Size(20, 630)
         Me.PictureBox.TabIndex = 8
@@ -203,6 +252,7 @@ Partial Class Level_1
         '
         'PictureBox5
         '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox5.Location = New System.Drawing.Point(-4, 1)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(23, 630)
@@ -213,7 +263,7 @@ Partial Class Level_1
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Green
-        Me.PictureBox1.Location = New System.Drawing.Point(716, 268)
+        Me.PictureBox1.Location = New System.Drawing.Point(712, 256)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(157, 18)
         Me.PictureBox1.TabIndex = 3
@@ -222,131 +272,57 @@ Partial Class Level_1
         '
         'picGround
         '
+        Me.picGround.BackColor = System.Drawing.Color.Transparent
         Me.picGround.Location = New System.Drawing.Point(-4, 615)
         Me.picGround.Name = "picGround"
-        Me.picGround.Size = New System.Drawing.Size(1434, 16)
+        Me.picGround.Size = New System.Drawing.Size(1272, 16)
         Me.picGround.TabIndex = 1
         Me.picGround.TabStop = False
         '
         'picPlayer
         '
+        Me.picPlayer.BackColor = System.Drawing.Color.Transparent
         Me.picPlayer.Image = Global.ART_of_WAR.My.Resources.Resources.Player
-        Me.picPlayer.Location = New System.Drawing.Point(595, 499)
+        Me.picPlayer.Location = New System.Drawing.Point(86, 499)
         Me.picPlayer.Name = "picPlayer"
         Me.picPlayer.Size = New System.Drawing.Size(85, 109)
         Me.picPlayer.TabIndex = 13
         Me.picPlayer.TabStop = False
-        '
-        'picCm1
-        '
-        Me.picCm1.Image = CType(resources.GetObject("picCm1.Image"), System.Drawing.Image)
-        Me.picCm1.Location = New System.Drawing.Point(595, 499)
-        Me.picCm1.Name = "picCm1"
-        Me.picCm1.Size = New System.Drawing.Size(85, 109)
-        Me.picCm1.TabIndex = 19
-        Me.picCm1.TabStop = False
-        '
-        'picCm2
-        '
-        Me.picCm2.Image = Global.ART_of_WAR.My.Resources.Resources.CM2
-        Me.picCm2.Location = New System.Drawing.Point(595, 499)
-        Me.picCm2.Name = "picCm2"
-        Me.picCm2.Size = New System.Drawing.Size(85, 109)
-        Me.picCm2.TabIndex = 20
-        Me.picCm2.TabStop = False
-        '
-        'picCm3
-        '
-        Me.picCm3.Image = Global.ART_of_WAR.My.Resources.Resources.CM3
-        Me.picCm3.Location = New System.Drawing.Point(595, 499)
-        Me.picCm3.Name = "picCm3"
-        Me.picCm3.Size = New System.Drawing.Size(85, 109)
-        Me.picCm3.TabIndex = 21
-        Me.picCm3.TabStop = False
-        '
-        'picCm4
-        '
-        Me.picCm4.Image = Global.ART_of_WAR.My.Resources.Resources.CM4
-        Me.picCm4.Location = New System.Drawing.Point(595, 499)
-        Me.picCm4.Name = "picCm4"
-        Me.picCm4.Size = New System.Drawing.Size(85, 109)
-        Me.picCm4.TabIndex = 22
-        Me.picCm4.TabStop = False
-        '
-        'picCm5
-        '
-        Me.picCm5.Image = Global.ART_of_WAR.My.Resources.Resources.CM5
-        Me.picCm5.Location = New System.Drawing.Point(595, 499)
-        Me.picCm5.Name = "picCm5"
-        Me.picCm5.Size = New System.Drawing.Size(85, 109)
-        Me.picCm5.TabIndex = 23
-        Me.picCm5.TabStop = False
-        '
-        'picCm6
-        '
-        Me.picCm6.Image = Global.ART_of_WAR.My.Resources.Resources.CM6
-        Me.picCm6.Location = New System.Drawing.Point(595, 499)
-        Me.picCm6.Name = "picCm6"
-        Me.picCm6.Size = New System.Drawing.Size(85, 109)
-        Me.picCm6.TabIndex = 24
-        Me.picCm6.TabStop = False
-        '
-        'picCm7
-        '
-        Me.picCm7.Image = Global.ART_of_WAR.My.Resources.Resources.CM7
-        Me.picCm7.Location = New System.Drawing.Point(595, 499)
-        Me.picCm7.Name = "picCm7"
-        Me.picCm7.Size = New System.Drawing.Size(85, 109)
-        Me.picCm7.TabIndex = 25
-        Me.picCm7.TabStop = False
-        '
-        'picCm8
-        '
-        Me.picCm8.Image = Global.ART_of_WAR.My.Resources.Resources.CM8
-        Me.picCm8.Location = New System.Drawing.Point(595, 499)
-        Me.picCm8.Name = "picCm8"
-        Me.picCm8.Size = New System.Drawing.Size(85, 109)
-        Me.picCm8.TabIndex = 26
-        Me.picCm8.TabStop = False
-        '
-        'picCm9
-        '
-        Me.picCm9.Image = Global.ART_of_WAR.My.Resources.Resources.CM9
-        Me.picCm9.Location = New System.Drawing.Point(595, 499)
-        Me.picCm9.Name = "picCm9"
-        Me.picCm9.Size = New System.Drawing.Size(85, 109)
-        Me.picCm9.TabIndex = 27
-        Me.picCm9.TabStop = False
-        '
-        'picCm10
-        '
-        Me.picCm10.Image = Global.ART_of_WAR.My.Resources.Resources.CM10
-        Me.picCm10.Location = New System.Drawing.Point(595, 499)
-        Me.picCm10.Name = "picCm10"
-        Me.picCm10.Size = New System.Drawing.Size(85, 109)
-        Me.picCm10.TabIndex = 28
-        Me.picCm10.TabStop = False
         '
         'picAir
         '
         Me.picAir.BackColor = System.Drawing.Color.Transparent
         Me.picAir.Location = New System.Drawing.Point(-4, 1)
         Me.picAir.Name = "picAir"
-        Me.picAir.Size = New System.Drawing.Size(1434, 492)
+        Me.picAir.Size = New System.Drawing.Size(1272, 492)
         Me.picAir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picAir.TabIndex = 2
         Me.picAir.TabStop = False
         '
-        'tmrCMA
+        'AxWindowsMediaPlayer1
         '
+        Me.AxWindowsMediaPlayer1.Enabled = True
+        Me.AxWindowsMediaPlayer1.Location = New System.Drawing.Point(69, 401)
+        Me.AxWindowsMediaPlayer1.Name = "AxWindowsMediaPlayer1"
+        Me.AxWindowsMediaPlayer1.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(133, 54)
+        Me.AxWindowsMediaPlayer1.TabIndex = 25
         '
         'Level_1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1431, 633)
+        Me.BackgroundImage = Global.ART_of_WAR.My.Resources.Resources.CityNightbackground
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.ClientSize = New System.Drawing.Size(1271, 633)
+        Me.Controls.Add(Me.AxWindowsMediaPlayer1)
+        Me.Controls.Add(Me.Goal)
+        Me.Controls.Add(Me.Flag2)
+        Me.Controls.Add(Me.Flag3)
+        Me.Controls.Add(Me.Flag1)
+        Me.Controls.Add(Me.Flag0)
+        Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.PictureBox12)
-        Me.Controls.Add(Me.PictureBox11)
         Me.Controls.Add(Me.PictureBox10)
         Me.Controls.Add(Me.PictureBox9)
         Me.Controls.Add(Me.PictureBox8)
@@ -359,21 +335,17 @@ Partial Class Level_1
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.picGround)
         Me.Controls.Add(Me.picPlayer)
-        Me.Controls.Add(Me.picCm1)
-        Me.Controls.Add(Me.picCm2)
-        Me.Controls.Add(Me.picCm3)
-        Me.Controls.Add(Me.picCm4)
-        Me.Controls.Add(Me.picCm5)
-        Me.Controls.Add(Me.picCm6)
-        Me.Controls.Add(Me.picCm7)
-        Me.Controls.Add(Me.picCm8)
-        Me.Controls.Add(Me.picCm9)
-        Me.Controls.Add(Me.picCm10)
         Me.Controls.Add(Me.picAir)
         Me.Name = "Level_1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Level_1"
+        CType(Me.Goal, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Flag2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Flag3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Flag1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Flag0, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
@@ -386,17 +358,8 @@ Partial Class Level_1
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picGround, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picPlayer, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picCm1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picCm2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picCm3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picCm4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picCm5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picCm6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picCm7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picCm8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picCm9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picCm10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picAir, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -418,17 +381,14 @@ Partial Class Level_1
     Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox11 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox12 As System.Windows.Forms.PictureBox
-    Friend WithEvents picCm1 As System.Windows.Forms.PictureBox
-    Friend WithEvents picCm2 As System.Windows.Forms.PictureBox
-    Friend WithEvents picCm3 As System.Windows.Forms.PictureBox
-    Friend WithEvents picCm4 As System.Windows.Forms.PictureBox
-    Friend WithEvents picCm5 As System.Windows.Forms.PictureBox
-    Friend WithEvents picCm6 As System.Windows.Forms.PictureBox
-    Friend WithEvents picCm7 As System.Windows.Forms.PictureBox
-    Friend WithEvents picCm8 As System.Windows.Forms.PictureBox
-    Friend WithEvents picCm9 As System.Windows.Forms.PictureBox
-    Friend WithEvents picCm10 As System.Windows.Forms.PictureBox
     Friend WithEvents tmrCMA As System.Windows.Forms.Timer
+    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents Flag0 As System.Windows.Forms.PictureBox
+    Friend WithEvents Flag1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Flag3 As System.Windows.Forms.PictureBox
+    Friend WithEvents Flag2 As System.Windows.Forms.PictureBox
+    Friend WithEvents tmrFlags As System.Windows.Forms.Timer
+    Friend WithEvents Goal As System.Windows.Forms.PictureBox
+    Friend WithEvents AxWindowsMediaPlayer1 As AxWMPLib.AxWindowsMediaPlayer
 End Class

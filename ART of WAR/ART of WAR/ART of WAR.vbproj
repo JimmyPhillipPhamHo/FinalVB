@@ -191,6 +191,96 @@
   <ItemGroup>
     <None Include="Resources\Player.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMJ1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMJ2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMRV1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMRV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMRV3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMRV4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMRV5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMRV6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMRV7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMRV8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMRV9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMRV10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayerRV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platforms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red Flag 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red Flag 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red Flag 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pelican.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_captured.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_captured.wma" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_captured.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04_MKAlieZ.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
